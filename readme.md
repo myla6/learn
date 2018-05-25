@@ -1,22 +1,22 @@
 ##  git 的基本操作
 
 ###  初始化一个git仓库
-git init
+     git init
 
 ###  提交文件到缓存区
-git add . 
+	 git add . 
 
 ### 提交文件到git版本库
-git commit -m "提交说明" 
+	 git commit -m "提交说明" 
 
 ### 查看工作区状态
-git status 
+	 git status 
 
 ### 查看不同
-git diff
+	 git diff
 
 ### 查看日志
-git log
+	 git log
 
 
 ## git 远程仓库
@@ -32,7 +32,7 @@ git log
 	 $ git config --global user.email "942989558@qq.com"
 	 
 ###  链接到远程仓库
-git remote add origin https://github.com/leinizisky/mygit.git
+     git remote add origin https://github.com/leinizisky/mygit.git
 
 
 	 
