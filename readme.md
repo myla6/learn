@@ -50,4 +50,11 @@
     git push origin <branch-name>
 
 
+
+
+## git工具操作
+### 退出编辑模式
+    Esc键以确保您退出插入模式，然后:wq（冒号W Q）或ZZ（按住Shift Z偏移-Z）
+
+
 	 
