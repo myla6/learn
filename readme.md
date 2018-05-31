@@ -17,6 +17,9 @@
 
 ### 查看日志
 	 git log
+	 
+### 提交到远程仓库
+	git push -u origin master
 
 
 ## git 远程仓库
