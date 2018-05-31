@@ -38,4 +38,16 @@
      git remote add origin https://github.com/leinizisky/mygit.git
 
 
+##  多人协作
+
+### 试图推送自己的修改
+    git push origin <branch-name>
+
+### 若失败获取远程信息
+    git pull
+
+### 解决冲突，重新push
+    git push origin <branch-name>
+
+
 	 
