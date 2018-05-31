@@ -34,7 +34,7 @@
 	 $ git config --global user.name "leinizisky"
 	 $ git config --global user.email "942989558@qq.com"
 	 
-###  链接到远程仓库
+###  链接到远程仓库2
      git remote add origin https://github.com/leinizisky/mygit.git
 
 
