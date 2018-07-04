@@ -27,10 +27,11 @@ class TodoList extends Component{
 							className="input" 
 							value={this.state.inputValue}
 							onChange={this.handleInputChange}
+							ref={(input) => {this.input = input}}
 						/>
 						<button onClick={this.handleBtnClick}>提交</button>
 				</div>
-				<ul>
+				<ul ref={(ul) => {this.ul = ul}}>
 					{this.getTodoItem()}
 				</ul>
 				<Test content={this.state.inputValue}/>
@@ -52,6 +53,8 @@ class TodoList extends Component{
 	}
 
 	handleInputChange(e){
+		//ref的用法操作dom
+		//const value =this.input.value;
 		const value=e.target.value;
 		this.setState(()=>({ 
 				inputValue:value
@@ -64,11 +67,14 @@ class TodoList extends Component{
 	}
 
 	handleBtnClick(){
+		//setSate 是异步的，获取ref也许不对的问题，用setSate的回调
 		this.setState((prevState)=>({
 			list:[...prevState.list,prevState.inputValue],
 			inputValue:''
-		}));
-
+		}),() => {
+			console.log(this.ul.querySelectorAll("div").length);
+		});
+		
 		// this.setState({
 		// 	list:[...this.state.list,this.state.inputValue],
 		// 	inputValue:''

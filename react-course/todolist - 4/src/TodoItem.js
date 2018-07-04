@@ -10,6 +10,11 @@ class TodoItem extends Component{
 
 	render(){
 		const {content,test}=this.props;
+		//JSX  -> createElement->虚拟DOM(JS对象) ->DOM
+		//return <div>item</div>
+		//等价于
+		//return React.createElement('div',{'item'});
+		
 		return <div onClick={this.handleClick}>
 			{test}-{content}
 		</div>
@@ -23,7 +28,7 @@ class TodoItem extends Component{
 
 TodoItem.propTypes={
 	test:PropTypes.string.isRequired,
-	content:PropTypes.string,
+	content:PropTypes.oneOfType([PropTypes.number,PropTypes.string]),
 	deleteItem:PropTypes.func,
 	index:PropTypes.number
 }
