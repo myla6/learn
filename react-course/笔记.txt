@@ -1,0 +1,22 @@
+### react 提升性能的方法
+1. 使用shouldComponentUpdate生命周期判断子组件是否需要重新渲染
+2. setSate的异步加载
+3. 使用虚拟dom,js对象的对比快速
+4. 同层比较和keys值的比较
+
+### ajax请求的位置,放在只执行一次的生命周期函数
+componentDidMount(){
+	let result={}
+	this.ajax().then((res) => {
+		result=res;
+	});
+}
+
+### react 的ajax请求---axios
+import axios from 'axios'
+
+axios.get('/api/todolist').then(() => {alert('success')}).cache(() => { alert('error')})
+
+### 使用Charles 进行接口数据模拟
+
+

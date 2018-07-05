@@ -17,7 +17,13 @@ class TodoList extends Component{
 		this.handleItemDelete=this.handleItemDelete.bind(this);
 	}
 
+	//组件挂载之前自动执行
+	componentWillMount(){
+		console.log('componentWillMount');
+	}
+
 	render(){
+		console.log('parent render');
 		return(
 			<Fragment>
 				<div>
@@ -37,6 +43,30 @@ class TodoList extends Component{
 				<Test content={this.state.inputValue}/>
 			</Fragment>
 			)
+	}
+
+  // 组件挂载之后自动执行
+	componentDidMount(){
+		console.log('componentDidMount');
+	}
+
+	//组件被更新之前，自动被执行
+	// shouldComponentUpdate 需要返回一个bool
+	shouldComponentUpdate(){
+			console.log('shouldComponentUpdate');
+			return true;
+	}
+
+	// 组件被跟新之前，它会自动执行，但是他在shouldComponentUpdate之后执行
+	// 如果shouldComponentUpdate 返回true他才执行
+	// 如果返回false则不执行
+	componentWillUpdate(){
+		console.log('componentWillUpdate')
+	}
+
+	// 组件跟新完之后，他会被执行
+	componentDidUpdate(){
+		console.log('componentDidUpdate');
 	}
 
 	getTodoItem(){
