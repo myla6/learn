@@ -7,6 +7,7 @@ import {
 	DownloadInfo
 } from '../style'
 
+
 class Recommend extends Component{
 	render(){
 		return(
@@ -22,9 +23,9 @@ class Recommend extends Component{
 					}
 				</RecommendWrapper>
 				<DownloadWrapper>
-					<img src='http://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png' alt='' />
+					<div className='loadImg'></div>
 					<DownloadInfo>
-						<h4>下载简书手机App</h4>
+						<h4>下载简书手机App<i className='iconfont download'>&#xe632;</i></h4>
 						<p>随时随地发现和创作内容</p>
 					</DownloadInfo>
 				</DownloadWrapper>
