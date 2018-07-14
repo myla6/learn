@@ -1,5 +1,6 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { actionCreators } from './store'
 import {
@@ -18,22 +19,31 @@ import {
 	SearchWrapper
 } from './style.js'
 
-class Header extends Component{
-	
-	getListArea(){
-		const {focused, list, page,totalPage,mouseIn,handleMouseEnter,handleMouseLeave,handleChangePage}=this.props;
-		const newList=list.toJS();
-		const pageList=[];
-		if(newList.length){
-			for(let i=(page-1) * 10;i<page*10;i++){
+class Header extends Component {
+
+	getListArea() {
+		const {
+			focused,
+			list,
+			page,
+			totalPage,
+			mouseIn,
+			handleMouseEnter,
+			handleMouseLeave,
+			handleChangePage
+		} = this.props;
+		const newList = list.toJS();
+		const pageList = [];
+		if (newList.length) {
+			for (let i = (page - 1) * 10; i < page * 10; i++) {
 				pageList.push(
 					<SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
 				)
 			}
 		}
-		
-		if(focused || mouseIn){
-			return(
+
+		if (focused || mouseIn) {
+			return (
 				<SearchInfo onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 					<SearchInfoTitle>
 						热门搜索
@@ -54,21 +64,32 @@ class Header extends Component{
 					</SearchInfoList>
 				</SearchInfo>
 			);
-		}else{
+		} else {
 			return null;
 		}
 	}
 
-	render(){
-		const { focused, handleInputFocus,handleInputBlur,list }=this.props;
-		return(
+	render() {
+		const {
+			focused,
+			handleInputFocus,
+			handleInputBlur,
+			list
+		} = this.props;
+		return (
 			<HeaderWrapper>
-				<Logo href='/'/>
+				<Link to='/'>
+					<Logo/>
+				</Link>
 				<Nav>
-					<NavItem className='left active'>首页</NavItem>
+					<Link to='/'>
+						<NavItem className='left active'>首页</NavItem>
+					</Link>
 					<NavItem className='left'>下载App</NavItem>
 					<NavItem className='right'><i className='iconfont'>&#xe636;</i></NavItem>
-					<NavItem className='right'>登陆</NavItem>
+					<Link to='/login'>
+						<NavItem className='right'>登陆</NavItem>
+					</Link>
 					<SearchWrapper>
 						<CSSTransition
 							in={focused}
@@ -96,51 +117,51 @@ class Header extends Component{
 
 
 
-const mapStateToProps=(state) => {
-	return{
+const mapStateToProps = (state) => {
+	return {
 		//focused:state.get('header').get('focused')
 		// 等价于上面的代码
-		focused:state.getIn(['header','focused']),
-		list:state.getIn(['header','list']),
-		page:state.getIn(['header','page']),
-		totalPage:state.getIn(['header','totalPage']),
-		mouseIn:state.getIn(['header','mouseIn'])
+		focused: state.getIn(['header', 'focused']),
+		list: state.getIn(['header', 'list']),
+		page: state.getIn(['header', 'page']),
+		totalPage: state.getIn(['header', 'totalPage']),
+		mouseIn: state.getIn(['header', 'mouseIn'])
 	}
 }
 
-const mapDispatchToProps=(dispatch) => {
+const mapDispatchToProps = (dispatch) => {
 	return {
-		handleInputFocus(list){
-			(list.size===0) && dispatch(actionCreators.getList());
+		handleInputFocus(list) {
+			(list.size === 0) && dispatch(actionCreators.getList());
 			dispatch(actionCreators.searchFocus());
 		},
-		handleInputBlur(){
+		handleInputBlur() {
 			dispatch(actionCreators.searchBlur());
 		},
-		handleMouseEnter(){
+		handleMouseEnter() {
 			dispatch(actionCreators.mouseEnter());
 		},
-		handleMouseLeave(){
+		handleMouseLeave() {
 			dispatch(actionCreators.mouseLeave());
 		},
-		handleChangePage(page,totalPage,spin){
-			let originAngle=spin.style.transform.replace(/[^0-9]/ig,'');
-			if(originAngle){
-				originAngle=parseInt(originAngle,10);
-			}else{
-				originAngle=0;
+		handleChangePage(page, totalPage, spin) {
+			let originAngle = spin.style.transform.replace(/[^0-9]/ig, '');
+			if (originAngle) {
+				originAngle = parseInt(originAngle, 10);
+			} else {
+				originAngle = 0;
 			}
-			spin.style.transform='rotate('+(originAngle+360)+'deg)';
+			spin.style.transform = 'rotate(' + (originAngle + 360) + 'deg)';
 
-			if(page<totalPage){
-				dispatch(actionCreators.changePage(page+1));
-			}else{
+			if (page < totalPage) {
+				dispatch(actionCreators.changePage(page + 1));
+			} else {
 				dispatch(actionCreators.changePage(1));
 			}
-			
+
 		}
 
 	}
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
