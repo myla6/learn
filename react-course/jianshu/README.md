@@ -1,3 +1,4 @@
+### 项目安装依赖
 1. npm install create-react-app -g
 2. create-react-app 项目名
 3. npm install styled-components --save -g
@@ -9,5 +10,9 @@
 9. npm install redux-thunk --save
 10. npm install axios --save
 
-11. npm react-router-dom --save
+11. npm install react-router-dom --save
+12. npm install react-loadable
+
+### 项目上线打包
+npm run build
 

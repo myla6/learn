@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
-import { actionCreators } from './store'
+import { actionCreators } from './store';
+import { actionCreators as loginActionCreators } from '../../pages/login/store';
 import {
 	HeaderWrapper,
 	Logo,
@@ -74,7 +75,9 @@ class Header extends Component {
 			focused,
 			handleInputFocus,
 			handleInputBlur,
-			list
+			list,
+			isLogin,
+			logOut
 		} = this.props;
 		return (
 			<HeaderWrapper>
@@ -87,9 +90,12 @@ class Header extends Component {
 					</Link>
 					<NavItem className='left'>下载App</NavItem>
 					<NavItem className='right'><i className='iconfont'>&#xe636;</i></NavItem>
-					<Link to='/login'>
-						<NavItem className='right'>登陆</NavItem>
-					</Link>
+					{
+						isLogin?
+						<NavItem onClick={logOut} className='right'>退出</NavItem>:
+						<Link to='/login'><NavItem className='right'>登陆</NavItem></Link>
+					}
+					
 					<SearchWrapper>
 						<CSSTransition
 							in={focused}
@@ -107,7 +113,9 @@ class Header extends Component {
 					</SearchWrapper>
 				</Nav>
 				<Addition>
-					<Button className='writting'><i className='iconfont'>&#xe608;</i>写文章</Button>
+					<Link to='/writer'>
+						<Button className='writting'><i className='iconfont'>&#xe608;</i>写文章</Button>
+					</Link>
 					<Button className='reg'>注册</Button>
 				</Addition>
 			</HeaderWrapper>
@@ -125,7 +133,8 @@ const mapStateToProps = (state) => {
 		list: state.getIn(['header', 'list']),
 		page: state.getIn(['header', 'page']),
 		totalPage: state.getIn(['header', 'totalPage']),
-		mouseIn: state.getIn(['header', 'mouseIn'])
+		mouseIn: state.getIn(['header', 'mouseIn']),
+		isLogin:state.getIn(['login','isLogin'])
 	}
 }
 
@@ -159,6 +168,9 @@ const mapDispatchToProps = (dispatch) => {
 				dispatch(actionCreators.changePage(1));
 			}
 
+		},
+		logOut(){
+			dispatch(loginActionCreators.logOut())
 		}
 
 	}
