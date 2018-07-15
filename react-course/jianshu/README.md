@@ -1,5 +1,7 @@
 ### 模仿简书网站，本地模拟数据，完成首页，详细页及登陆
-![image]()
+![image](https://github.com/leinizisky/learn/blob/master/react-course/jianshu/ReadImage/jianshu1.png)
+![image](https://github.com/leinizisky/learn/blob/master/react-course/jianshu/ReadImage/jianshu2.png)
+![image](https://github.com/leinizisky/learn/blob/master/react-course/jianshu/ReadImage/jianshu3.png)
 
 ### 项目安装依赖
 1. npm install create-react-app -g
