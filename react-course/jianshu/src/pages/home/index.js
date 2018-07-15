@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react';
-import Topic from './components/Topic';
 import { connect } from 'react-redux';
+import { actionCreaters } from './store';
+import Banner from './components/Banner';
+import Topic from './components/Topic';
 import List from './components/List';
 import Recommend from './components/Recommend';
 import Writer from './components/Writer';
-import { actionCreaters } from './store'
 import {
 	HomeWrapper,
 	HomeLeft,
@@ -17,11 +18,7 @@ class Home extends PureComponent {
 		return (
 			<HomeWrapper>
 				<HomeLeft>
-					<img 
-						className='banner-img' 
-						src='//upload.jianshu.io/admin_banners/web_images/4348/7c6c4340ce1eb2aa20bba2c5542a2113d33f63c5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540'
-						alt=''
-						/>
+					<Banner></Banner>
 					<Topic></Topic>
 					<List></List>
 				</HomeLeft>

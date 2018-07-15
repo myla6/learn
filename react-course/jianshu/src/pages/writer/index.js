@@ -8,7 +8,7 @@ class Writer extends PureComponent{
 		{
 			if(isLogin){
 				return(
-					<div>写文章</div>
+					<div>写文章页面（待完善）</div>
 				)
 			}else{
 				return <Redirect to='/login' />

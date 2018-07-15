@@ -88,7 +88,9 @@ class Header extends Component {
 					<Link to='/'>
 						<NavItem className='left active'>首页</NavItem>
 					</Link>
-					<NavItem className='left'>下载App</NavItem>
+					<Link to='/download'>
+						<NavItem className='left'>下载App</NavItem>
+					</Link>
 					<NavItem className='right'><i className='iconfont'>&#xe636;</i></NavItem>
 					{
 						isLogin?

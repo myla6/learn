@@ -16,7 +16,7 @@ class Recommend extends PureComponent{
 					{
 						this.props.list.map((item) => {
 							return (
-								<RecommendItem imgUrl={item.get('imgUrl')} key={item.get('id')}>
+								<RecommendItem target="_blank" href={item.get('link')} imgUrl={item.get('imgUrl')} key={item.get('id')}>
 								</RecommendItem>
 							)
 						})

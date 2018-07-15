@@ -9,42 +9,63 @@
 			"id": 2,
 			"title": "手手绘",
 			"imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		},{
+			"id":3,
+			"title":"故事",
+			"imgUrl":"//upload.jianshu.io/collections/images/95/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		},{
+			"id":4,
+			"title":"互联网",
+			"imgUrl":"//upload.jianshu.io/collections/images/95/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		},{
+			"id":5,
+			"title":"摄影",
+			"imgUrl":"//upload.jianshu.io/collections/images/83/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		},{
+			"id":6,
+			"title":"历史",
+			"imgUrl":"//upload.jianshu.io/collections/images/75/22.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
 		}],
 		"articleList": [{
 			"id": 1,
-			"title": "胡歌12年后首谈车祸",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "《超时空同居》：爱情是对泥泞世俗的反抗",
+			"desc": "我其实是不喜欢看爱情片的。特别是国产爱情片。 乖张如《致青春》《左耳》，内敛如《匆匆那年》，老套如《泡沫之夏》，纯情如《我的少女时代》，无一不是...",
+			"imgUrl": "//upload-images.jianshu.io/upload_images/12507652-086d805840673f87.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
 		}, {
 			"id": 2,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "世界上有一种微妙的力，叫“我爸我妈不同意”",
+			"desc": "文/韩大爷的杂货铺 1. 常有读者对我倾诉亲情关系的问题，其中矛盾的焦点之一，便是父母插手孩子做决定。 比如：有的孩子想学文，父母偏让她学理；有...",
+			"imgUrl": "//upload-images.jianshu.io/upload_images/1767483-5f1a395daed4c0f7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
 		}, {
 			"id": 3,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "【一个人的北京】遇见的人，遇见的Burberry，晚安。",
+			"desc": "来北京的第十九天，有两件事值得纪念。 第一件事，是和子戈，以及他的『爱人』见面。 他是我在简书上认识的作者，一个电影的『信徒』，电影的『守夜人』...",
+			"imgUrl": "//upload-images.jianshu.io/upload_images/926747-1806916372ae45f6.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
 		}, {
 			"id": 4,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "从来没有一种坚持会被辜负",
+			"desc": "練字，我清晨的又一杯茶。。 世界会向那些有目标和远见的人让路！ 想要体面生活，又觉得打拼辛苦；想要健康身体，又无法坚持运动。人最失败的，莫过于对...",
+			"imgUrl": "//upload-images.jianshu.io/upload_images/5831394-06d8e102f410ee2a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
 		}],
 		"recommendList":[{
 			"id":1,
+			"link":"//www.jianshu.com/trending/weekly?utm_medium=index-banner-s&utm_source=desktop",
 			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
 		},{
 			"id":2,
+			"link":"//www.jianshu.com/trending/monthly?utm_medium=index-banner-s&utm_source=desktop",
 			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png"
 		},{
 			"id":3,
+			"link":"//www.jianshu.com/mobile/books?category_id=284",
 			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
 		},{
 			"id":4,
+			"link":"//www.jianshu.com/publications",
 			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
 		},{
 			"id":5,
+			"link":"//www.jianshu.com/c/e048f1a72e3d?utm_medium=index-banner-s&utm_source=desktop",
 			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
 		}],
 		"writeList":[{
@@ -59,6 +80,16 @@
 			"desc":"写了160.8k字 · 39.2k喜欢"
 		},{
 			"id":3,
+			"userImg":"//upload.jianshu.io/users/upload_avatars/2998364/9f8351c3734b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+			"title":"道长是名思维贩子",
+			"desc":"写了160.8k字 · 39.2k喜欢"
+		},{
+			"id":4,
+			"userImg":"//upload.jianshu.io/users/upload_avatars/2592029/d8d9bccfb37c.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+			"title":"道长是名思维贩子",
+			"desc":"写了160.8k字 · 39.2k喜欢"
+		},{
+			"id":5,
 			"userImg":"//upload.jianshu.io/users/upload_avatars/2998364/9f8351c3734b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
 			"title":"道长是名思维贩子",
 			"desc":"写了160.8k字 · 39.2k喜欢"

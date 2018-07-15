@@ -6,19 +6,24 @@ export const HomeWrapper=styled.div`
 	width:960px;
 	margin:0 auto;
 `;
+
 export const HomeLeft=styled.div`
 	float:left;
 	margin-left:15px;
 	padding-top:30px;
 	width:625px;
+`;
+
+export const HomeRight=styled.div`
+	width:280px;
+	float:right;
+`;
+
+export const BannerWrapper=styled.div`
 	.banner-img{
 		width:625px;
 		height:270px;
 	}
-`;
-export const HomeRight=styled.div`
-	width:280px;
-	float:right;
 `;
 
 export const TopicWrapper=styled.div`
@@ -84,7 +89,8 @@ export const RecommendWrapper=styled.div`
 	width:280px;
 `;
 
-export const RecommendItem=styled.div`
+export const RecommendItem=styled.a`
+	display:block;
 	width:280px; 
 	height:50px;
 	background:url(${(props) => props.imgUrl});
