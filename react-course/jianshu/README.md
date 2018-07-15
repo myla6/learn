@@ -1,3 +1,6 @@
+### 模仿简书网站，本地模拟数据，完成首页，详细页及登陆
+![image]()
+
 ### 项目安装依赖
 1. npm install create-react-app -g
 2. create-react-app 项目名
