@@ -20,9 +20,15 @@ export const HomeRight=styled.div`
 `;
 
 export const BannerWrapper=styled.div`
+	width:625px;
+	height:270px;
+	padding-bottom:30px;
 	.banner-img{
-		width:625px;
-		height:270px;
+		img{
+			display:block;
+			width:100%; 
+			height:100%;
+		}
 	}
 `;
 

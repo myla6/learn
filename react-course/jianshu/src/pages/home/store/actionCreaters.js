@@ -7,7 +7,8 @@ const changeHomeData=(result) =>({
 	topicList:result.topicList,
 	articleList:result.articleList,
 	recommendList:result.recommendList,
-	writeList:result.writeList
+	writeList:result.writeList,
+	bannerList:result.bannerList
 })
 
 const addHomeList=(result,nextPage) => ({

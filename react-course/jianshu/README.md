@@ -18,6 +18,9 @@
 
 11. npm install react-router-dom --save
 12. npm install react-loadable
+13. npm install swipe-js-iso react-swipe --save(不好用)
+14. npm install react-slick --save
+15. npm install slick-carousel --save (react-slick的样式)
 
 ### 项目上线打包
 npm run build

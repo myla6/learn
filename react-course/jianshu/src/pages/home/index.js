@@ -13,6 +13,7 @@ import {
 	BackTop
 } from './style.js'
 
+
 class Home extends PureComponent {
 	render() {
 		return (

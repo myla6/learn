@@ -1,6 +1,19 @@
 {
 	"success": true,
 	"data": {
+		"bannerList":[{
+			"id":1,
+			"imgUrl":"//upload.jianshu.io/admin_banners/web_images/4342/ad6f90788db4c2a2b0fe87e3b654d1330698dc89.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540",
+			"linkUrl":""
+		},{
+			"id":2,
+			"imgUrl":"//upload.jianshu.io/admin_banners/web_images/4345/7c956f527bc16d8e639c436dcbb806e99fc4142a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540",
+			"linkUrl":"https://detail.tmall.com/item.htm?id=573232823386"
+		},{
+			"id":3,
+			"imgUrl":"//upload.jianshu.io/admin_banners/web_images/4349/5a2f0950cdda358517b737a9a961471be0241287.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540",
+			"linkUrl":"https://www.jianshu.com/p/58eb25b9148c?utm_medium=index-banner&utm_source=desktop"
+		}],
 		"topicList": [{
 			"id": 1,
 			"title": "社会热点",
