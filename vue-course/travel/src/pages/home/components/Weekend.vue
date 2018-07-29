@@ -1,16 +1,17 @@
 <template>
 	<div class="wrapper">
 		<div class="title">
-			<img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="猜你喜欢">
-			<span class="mp-title">猜你喜欢</span>
+			<img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="周末去哪儿">
+			<span class="mp-title">周末去哪儿</span>
 		</div>
 		<ul>
 			<li class="item-box border-bottom" v-for="item of list" :key="item.id">
-				<img class="item-img" :src="item.imgUrl" />
+				<div class="item-img-box">
+					<img class="item-img" :src="item.imgUrl" />
+				</div>
 		        <div class="item-info">
 		          <p class="item-title">{{item.title}}</p>
 		          <p class="item-desc">{{item.desc}}</p>
-		          <button class="item-button">查看详情</button>
 		        </div>
 			</li>
 		</ul>
@@ -19,7 +20,7 @@
 
 <script>
 	export default {
-		name:'HomeRecommend',
+		name:'HomeWeekend',
 		props:{
 			list:Array
 		}
@@ -48,33 +49,21 @@
 			color:#212121
 			font-size:.32rem
 			line-height:.44rem
-	.item-box
+	.item-img-box
 		overflow:hidden
-		display:flex
-		height:1.9rem
-		padding: .2rem 0
-		margin-left:.24rem
+		height:0
+		padding-bottom:37.09%
 		.item-img
-			width:1.7rem
-			height:1.7rem
-			paddinh:.1rem
-		.item-info
-			flex:1
-			padding:.1rem
-			min-width:0
-			.item-title
-				line-height:.54rem
-				font-size:.32rem
-				ellipsis()
-			.item-desc
-				line-height:.4rem
-				color:#ccc
-				ellipsis()
-			.item-button
-				line-height:.44rem
-				margin-top:.16rem
-				background:#ff9300
-				padding:0 .2rem
-				border-radius:.06rem
-				color:#fff
+			width:100%
+	.item-info
+		padding:.1rem
+		min-width:0
+		.item-title
+			line-height:.54rem
+			font-size:.32rem
+			ellipsis()
+		.item-desc
+			line-height:.4rem
+			color:#616161
+			ellipsis()
 </style>
