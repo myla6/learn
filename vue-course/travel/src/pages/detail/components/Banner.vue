@@ -1,27 +1,35 @@
 <template>
 	<div>
 		<div class="banner" @click="handleClick">
-			<img class="banner-img" src="//img1.qunarzz.com/sight/p32/201211/00/e0d3c3c83bc02d8193835fbb.jpg_600x330_8be0e1fc.jpg"/>
+			<img class="banner-img" :src="bannerImg"/>
 			<div class="banner-info">
-				<p class="banner-desc">里神山圣湖旅游区</p>
-				<p class="banner-num"><span class="iconfont pic-icon">&#xe632;</span>3</p>
+				<p class="banner-desc">{{sightName}}</p>
+				<p class="banner-num"><span class="iconfont pic-icon">&#xe632;</span>{{gallaryImgs.length}}</p>
 			</div>
 		</div>
-		<common-gallary :list="list" v-show="showGallary" @change="handleCloseClick"></common-gallary>
+		<fade-animation>
+			<common-gallary :list="gallaryImgs" v-show="showGallary" @change="handleCloseClick"></common-gallary>
+		</fade-animation>
 	</div>
 </template>
 <script>
 	import commonGallary from '@/common/gallary/Gallary'
+	import fadeAnimation from '@/common/fadeAnimation/fadeAnimation'
 	export default{
 		name:'detailBanner',
+		props:{
+			sightName:String,
+			bannerImg:String,
+			gallaryImgs:Array
+		},
 		data(){
 			return {
-				showGallary:false,
-				list:['http://img1.qunarzz.com/sight/p0/201405/04/daf0fa5bbac61d3bb2045fe1a0251405.jpg_r_800x800_fb127412.jpg','http://img1.qunarzz.com/sight/p0/1408/19/c573b5eb5b182fa51318ad1daff88129.jpg_r_800x800_879b985c.jpg']
+				showGallary:false
 			}
 		},
 		components:{
-			commonGallary
+			commonGallary,
+			fadeAnimation
 		},
 		methods:{
 			handleClick(){

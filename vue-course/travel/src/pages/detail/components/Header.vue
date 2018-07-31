@@ -12,13 +12,16 @@
 			<router-link to='/'>
 				<div class="iconfont back-fixed-icon">&#xe624;</div>
 			</router-link>
-			详细信息
+			{{sightName}}
 		</div>
 	</div>
 </template>
 <script>
 	export default{
 		name:'detailHeader',
+		props:{
+			sightName:String
+		},
 		data(){
 			return{
 				showNormal:true,
@@ -40,10 +43,10 @@
 				}
 			}
 		},
-		activated(){
+		mounted(){
 			window.addEventListener('scroll',this.handleScroll)
 		},
-		deactivated(){
+		beforeDestroy(){
 			window.removeEventListener('scroll',this.handleScroll)
 		}
 	}
@@ -66,6 +69,7 @@
 			font-weight:bold
 			font-size:.32rem
 	.header-fixed
+		z-index:99
 		position:fixed
 		top:0
 		left:0

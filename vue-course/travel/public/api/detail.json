@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "里神山圣湖旅游区",
+    "bannerImg": "http://img1.qunarzz.com/sight/p84/201211/08/d8c55d3d738fee7c93835fbb.jpg_600x330_a83facae.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201405/04/daf0fa5bbac61d3bb2045fe1a0251405.jpg_r_800x800_fb127412.jpg","http://img1.qunarzz.com/sight/p0/1408/19/c573b5eb5b182fa51318ad1daff88129.jpg_r_800x800_879b985c.jpg"],
+    "categoryList": [{
+        "title": "成人票",
+        "child": [{
+          "title": "二级联动",
+          "child": [{
+            "title": "三级联动2222"
+          }]
+        },{
+          "title": "二级联动111"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }]
+  }
+}
