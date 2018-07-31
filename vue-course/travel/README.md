@@ -1,11 +1,11 @@
-### 模仿简书网站，本地模拟数据，完成首页，详细页及登陆
+### 仿去哪儿网站，本地模拟数据，完成首页，城市选择页面，详细页部分功能，熟练vue的使用
 页面布局如下图
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel1.png)
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel2.png)
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel3.png)
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel4.png)
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel5.png)
-![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel6.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel1.jpg)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel2.jpg)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel3.jpg)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel4.jpg)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel5.jpg)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel6.jpg)
 
 
 # travel
