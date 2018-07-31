@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-//import fastClick from 'fastclick'
+import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueRouter from 'vue-router'
 import routers from './routers.js'
@@ -12,7 +12,7 @@ import './assets/styles/iconfont.css'
 
 
 Vue.config.productionTip = false
-//fastClick.attach(document.body)
+fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueRouter)
 
