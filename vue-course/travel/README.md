@@ -1,5 +1,4 @@
 ### 仿去哪儿网站，本地模拟数据，完成首页，城市选择页面，详细页部分功能，熟练vue的使用
-页面布局如下图
 ![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel1.jpg)
 ![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel2.jpg)
 ![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel3.jpg)
