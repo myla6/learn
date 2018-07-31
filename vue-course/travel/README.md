@@ -1,3 +1,13 @@
+### 模仿简书网站，本地模拟数据，完成首页，详细页及登陆
+页面布局如下图
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel1.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel2.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel3.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel4.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel5.png)
+![image](https://github.com/leinizisky/learn/blob/master/vue-course/travel/ReadImage/travel6.png)
+
+
 # travel
 
 ## Project setup
