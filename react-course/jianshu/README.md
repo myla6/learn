@@ -1,4 +1,5 @@
 ### 模仿简书网站，本地模拟数据，完成首页，详细页及登陆test分支合并
+#### pr形式合并到master
 页面布局如下图
 ![image](https://github.com/leinizisky/learn/blob/master/react-course/jianshu/ReadImage/jianshu1.png)
 ![image](https://github.com/leinizisky/learn/blob/master/react-course/jianshu/ReadImage/jianshu2.png)
